@@ -12,7 +12,7 @@ jobs:
   Install:
     runs-on: ubuntu-latest
     container:
-      image: dockerhub-external.banzait.com/banza-clio/clio:6.1.0.39
+      image: dockerhub-external.banzait.com/banza-clio/clio:6.0.2.9
       credentials:
          username: ${{ vars.BANZA_USER }}
          password: ${{ secrets.BANZA_USER_PASSWORD }}
