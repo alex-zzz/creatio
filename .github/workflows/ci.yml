@@ -14,7 +14,7 @@ jobs:
     container:
       image: dockerhub-external.banzait.com/banza-clio/clio:6.1.0.39
       credentials:
-         username: ${{ vars.BANZA_USER }}
+         username: ${{ TestEnv.BANZA_USER }}
          password: ${{ secrets.BANZA_USER_PASSWORD }}
       env:
         NODE_ENV: development
