@@ -107,7 +107,7 @@ jobs:
                   if [ -f "${{ vars.GZ_ARCHIVE_FILE_PATH }}/Packages.zip" ]; then
                       echo "${{ vars.GZ_ARCHIVE_FILE_PATH }}/Packages.zip"
                       echo "clio push-pkg /packages/gz/Packages.zip -l ${env_login} -p ${env_password} -u ${env_url}"
-                      clio push-pkg /packages/gz/Packages.zip -l "${env_login}" -p "${env_password}" -u "${env_url}"
+                      clio push-pkg ${{ vars.GZ_ARCHIVE_FILE_PATH }}/Packages.zip -l "${env_login}" -p "${env_password}" -u "${env_url}"
                       echo "restart-web-app $env_name"
                       clio restart-web-app $env_name
                       echo "clear-redis-db $env_name"
