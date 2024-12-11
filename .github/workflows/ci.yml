@@ -111,9 +111,9 @@ jobs:
                       echo "Register web app"
                       clio reg-web-app $env_name -u $env_url -l $env_login -p $env_password
                       echo "restart-web-app $env_name"
-                      clio restart-web-app main
+                      clio restart-web-app -u $env_url -l $env_login -p $env_password
                       echo "clear-redis-db $env_name"
-                      clio clear-redis-db $env_name
+                      clio clear-redis-db -u $env_url -l $env_login -p $env_password
                   fi
               fi
           done < <(echo "$output")
