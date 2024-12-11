@@ -1,0 +1,34 @@
+= MetaData.Schema.UId "a71ff8e1-adf7-44b0-aadd-30a67e8aeff5"
+= MetaData.Schema.A2 "SqlConsoleLog"
+= MetaData.Schema.A5 "881fa316-41b8-43e0-b262-f61fe42bbd82"
+= MetaData.Schema.B6 "4887c1a6-978a-4761-8929-94353166997c"
++ MetaData.Schema.B8 "7.9.1.3284"
+= MetaData.Schema.EG1.UId "253b71bb-66c2-49c2-bbb7-687e9d74b8a3"
+= MetaData.Schema.EG1.A2 "SqlConsoleLogEventsProcess"
+= MetaData.Schema.EG1.A5 "881fa316-41b8-43e0-b262-f61fe42bbd82"
+= MetaData.Schema.EG1.BK8 "7bb7d6a5-e7a3-4837-83bc-7f785d688165"
++ MetaData.Schema.EG1.BK28 "null"
+= MetaData.Schema.D8 "1bab9dcf-17d5-49f8-9536-8e0064f1dce0"
++ MetaData.Schema.D2 {"UId":"f2a239ac-fa31-469e-ac19-c1f0bd05e80a","A2":"Contact","A3":"a71ff8e1-adf7-44b0-aadd-30a67e8aeff5","A4":"a71ff8e1-adf7-44b0-aadd-30a67e8aeff5","A5":"881fa316-41b8-43e0-b262-f61fe42bbd82","S2":"b295071f-7ea9-4e62-8d1a-919bf3732ff2","S4":"16be3651-8fe2-4159-8dd0-a803d4683dd3","E6":true,"E17":"ContactId","E18":"ContactName"}
++ MetaData.Schema.D2 {"UId":"bec46887-712a-4fcf-b169-48feec246f86","A2":"IpAdress","A3":"a71ff8e1-adf7-44b0-aadd-30a67e8aeff5","A4":"a71ff8e1-adf7-44b0-aadd-30a67e8aeff5","A5":"881fa316-41b8-43e0-b262-f61fe42bbd82","S2":"325a73b8-0f47-44a0-8412-7606f78003ac"}
++ MetaData.Schema.D2 {"UId":"45331101-8750-4964-a07c-3c4166892e93","A2":"QueryText","A3":"a71ff8e1-adf7-44b0-aadd-30a67e8aeff5","A4":"a71ff8e1-adf7-44b0-aadd-30a67e8aeff5","A5":"881fa316-41b8-43e0-b262-f61fe42bbd82","S2":"c0f04627-4620-4bc0-84e5-9419dc8516b1"}
++ MetaData.Schema.D2 {"UId":"899f0740-77b9-4a4b-9f75-e071817abf07","A2":"CompletedOn","A3":"a71ff8e1-adf7-44b0-aadd-30a67e8aeff5","A4":"a71ff8e1-adf7-44b0-aadd-30a67e8aeff5","A5":"881fa316-41b8-43e0-b262-f61fe42bbd82","S2":"d21e9ef4-c064-4012-b286-fa1a8171da44"}
+~ MetaData.Schema.D2 ["ae0e45ca-c495-4fe7-a39d-3ab7278e1617","e80190a5-03b2-4095-90f7-a193a960adee","ebf6bb93-8aa6-4a01-900d-c6ea67affe21","9928edec-4272-425a-93bb-48743fee4b04","3015559e-cbc6-406a-88af-07f7930be832","3fabd836-6a53-4d8d-9069-6df88d9dae1e","f2a239ac-fa31-469e-ac19-c1f0bd05e80a","bec46887-712a-4fcf-b169-48feec246f86","45331101-8750-4964-a07c-3c4166892e93","899f0740-77b9-4a4b-9f75-e071817abf07"]
+= MetaData.Schema.D20.A2 "SqlConsoleLogEvents"
+- MetaData.Schema.EG1.B6
+- MetaData.Schema.EG1.BK29
+- MetaData.Schema.EG1.BK30
+- MetaData.Schema.D1
+- MetaData.Schema.D20.A5
+- MetaData.Schema.D20.FA5
+- MetaData.Schema.D20.FA6
+- MetaData.Schema.D20.FA7
+- MetaData.Schema.D20.FA11
+- MetaData.Schema.D20.FA12
++ MetaData.Schema.B7 false
++ MetaData.Schema.D2.["ae0e45ca-c495-4fe7-a39d-3ab7278e1617"].E16 false
++ MetaData.Schema.D2.["e80190a5-03b2-4095-90f7-a193a960adee"].E16 false
++ MetaData.Schema.D2.["ebf6bb93-8aa6-4a01-900d-c6ea67affe21"].E16 false
++ MetaData.Schema.D2.["9928edec-4272-425a-93bb-48743fee4b04"].E16 false
++ MetaData.Schema.D2.["3015559e-cbc6-406a-88af-07f7930be832"].E16 false
++ MetaData.Schema.D2.["3fabd836-6a53-4d8d-9069-6df88d9dae1e"].E16 false

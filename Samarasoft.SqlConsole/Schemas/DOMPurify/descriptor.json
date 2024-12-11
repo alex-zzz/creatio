@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "f706747a-d95d-40f1-96fe-ee4d83d063e7",
+    "Name": "DOMPurify",
+    "ModifiedOnUtc": "\/Date(1623414360000)\/",
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "DOMPurify Library",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,10 @@
+﻿{
+  "SqlScript": {
+    "UId": "5f35d225-fcee-4f6a-9c74-66ae0b286bef",
+    "Name": "InsertSmarasoftData",
+    "DBEngineType": 0,
+    "InstallType": 1,
+    "ModifiedOnUtc": "\/Date(1527000531000)\/",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+    "Name": "SqlConsoleModule",
+    "ModifiedOnUtc": "\/Date(1575994538000)\/",
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "SqlConsoleModule",
+    "DependsOn": []
+  }
+}

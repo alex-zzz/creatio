@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "495e7ae4-d007-404e-aefa-ead08bcbe6e5",
+    "Name": "SqlConsoleService",
+    "ModifiedOnUtc": "\/Date(1575985959000)\/",
+    "ManagerName": "SourceCodeSchemaManager",
+    "Caption": "SqlConsoleService",
+    "DependsOn": []
+  }
+}

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="ru-RU">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="SqlConsoleModule" />
+			<Item Name="LocalizableStrings.AccessError.Value" Value="Текущий пользователь не имеет прав для работы с консолью SQL запросов!" />
+			<Item Name="LocalizableStrings.ClearButton.Value" Value="Очистить" />
+			<Item Name="LocalizableStrings.ClearButtonTip.Value" Value="Очистить (Ctrl+L)" />
+			<Item Name="LocalizableStrings.CloseButton.Value" Value="Закрыть" />
+			<Item Name="LocalizableStrings.CloseButtonTip.Value" Value="Закрыть SQL console" />
+			<Item Name="LocalizableStrings.DataTableInfo.Caption" Value="Сообщение пользователю 1" />
+			<Item Name="LocalizableStrings.DataTableInfo.Value" Value="Показаны _START_ - _END_ из _TOTAL_ записей" />
+			<Item Name="LocalizableStrings.DataTableInfoEmpty.Value" Value="Показаны 0 - 0 из 0 записей" />
+			<Item Name="LocalizableStrings.DataTableInfoFiltered.Value" Value="(отфильтрованы из _MAX_ записей)" />
+			<Item Name="LocalizableStrings.DataTableLengthMenu.Value" Value="Показывать _MENU_ записей" />
+			<Item Name="LocalizableStrings.DataTableLoadingRecords.Value" Value="Загрузка..." />
+			<Item Name="LocalizableStrings.DataTablePaginateNext.Value" Value="Следующая" />
+			<Item Name="LocalizableStrings.DataTablePaginatePrevious.Value" Value="Предыдущая" />
+			<Item Name="LocalizableStrings.DataTableProcessing.Value" Value="Обработка..." />
+			<Item Name="LocalizableStrings.DataTableSearch.Value" Value="Поиск:" />
+			<Item Name="LocalizableStrings.DataTableZeroRecords.Value" Value="Ни одна запись не найдена" />
+			<Item Name="LocalizableStrings.ExecuteButton.Value" Value="Выполнить" />
+			<Item Name="LocalizableStrings.ExecuteButtonTip.Value" Value="Выполнить скрипт (Ctrl+Enter)" />
+			<Item Name="LocalizableStrings.ExportToCsvButton.Value" Value="Экспорт в CSV" />
+			<Item Name="LocalizableStrings.ExportToCsvButtonTip.Value" Value="Экспорт в CSV (Ctrl+Shift+S)" />
+			<Item Name="LocalizableStrings.HeaderCaption.Caption" Value="HeaderCaption" />
+			<Item Name="LocalizableStrings.HeaderCaption.Value" Value="Консоль SQL" />
+			<Item Name="LocalizableStrings.QueryTimeLabelCaptionPostfix.Value" Value=" сек" />
+			<Item Name="LocalizableStrings.QueryTimeLabelCaptionPrefix.Value" Value="Время выполнения запроса: " />
+			<Item Name="LocalizableStrings.SaveSqlButton.Value" Value="Сохранить SQL" />
+			<Item Name="LocalizableStrings.SaveSqlButtonTip.Value" Value="Сохранить SQL скрипт (Ctrl+S)" />
+			<Item Name="LocalizableStrings.ShowQueryLogButton.Value" Value="Показать лог запросов" />
+			<Item Name="LocalizableStrings.ShowQueryLogButtonTip.Value" Value="Показать лог запросов (Ctrl+Shift+H)" />
+		</Items>
+	</Group>
+</Resources>

@@ -1,0 +1,27 @@
+﻿{
+  "Descriptor": {
+    "UId": "4887c1a6-978a-4761-8929-94353166997c",
+    "PackageVersion": "7.7.0",
+    "Name": "Samarasoft.SqlConsole",
+    "ModifiedOnUtc": "\/Date(1462136188000)\/",
+    "Maintainer": "Samarasoft",
+    "Description": "Revision version: 30",
+    "DependsOn": [
+      {
+        "UId": "5be3998b-c5c3-42bb-a01c-2e4149059a97",
+        "PackageVersion": "7.8.0",
+        "Name": "Base"
+      },
+      {
+        "UId": "613fd913-be03-46ce-909b-f44e4225469e",
+        "PackageVersion": "7.8.0",
+        "Name": "UIv2"
+      },
+      {
+        "UId": "a7d9c356-450c-46d7-bc85-72dca4e280ba",
+        "PackageVersion": "7.8.0",
+        "Name": "NUI"
+      }
+    ]
+  }
+}

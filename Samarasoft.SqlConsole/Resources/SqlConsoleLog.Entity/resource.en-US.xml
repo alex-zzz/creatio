@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="SQL console log" />
+			<Item Name="Columns.CompletedOn.Caption" Value="Completed on" />
+			<Item Name="Columns.Contact.Caption" Value="Contact" />
+			<Item Name="Columns.IpAdress.Caption" Value="IP adress" />
+			<Item Name="Columns.QueryText.Caption" Value="Query text" />
+		</Items>
+	</Group>
+</Resources>

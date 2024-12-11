@@ -1,0 +1,283 @@
+﻿{
+  "MetaData": {
+    "Schema": {
+      "ManagerName": "ClientUnitSchemaManager",
+      "UId": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+      "A2": "SqlConsoleModule",
+      "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a",
+      "B1": [],
+      "B2": [
+        {
+          "UId": "dc0a435c-e41d-48d5-b2ba-e6fe5e11c57f",
+          "A2": "ExecuteButton",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "9d6f6c44-552f-468e-b3aa-9b291d0cd729",
+          "A2": "ExecuteButtonTip",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "693ea18f-1f02-4188-9d83-eb36aadc50f5"
+        },
+        {
+          "UId": "5707d805-f6b7-43e1-ba8a-797eab6b1a0b",
+          "A2": "CloseButton",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "71a707d7-e944-4c5d-9030-16c4849e94c5",
+          "A2": "ClearButton",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "ddcd4706-15d8-48ea-9159-28059916c95d",
+          "A2": "ClearButtonTip",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "693ea18f-1f02-4188-9d83-eb36aadc50f5"
+        },
+        {
+          "UId": "f422ff0d-a268-4838-b684-b3ec8bf96c3d",
+          "A2": "ExportToCsvButton",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "56f17b88-06c5-46be-b774-74fa815bf1c2",
+          "A2": "ExportToCsvButtonTip",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "693ea18f-1f02-4188-9d83-eb36aadc50f5"
+        },
+        {
+          "UId": "5221d1b8-c7ba-4c3d-9735-39ade084f88b",
+          "A2": "AccessError",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "c8ea33d8-808d-431c-977b-e20a5b9f5010",
+          "A2": "HeaderCaption",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "a8248fb5-cc61-4880-a948-6fefab6b2b52",
+          "A2": "QueryTimeLabelCaptionPrefix",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "a61befe5-be2e-4267-8e3f-36df34ba26a6",
+          "A2": "QueryTimeLabelCaptionPostfix",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "eae7592c-4777-4032-b3c1-9a0e546b9e6a",
+          "A2": "DataTableEmptyTable",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "9e566c35-d954-4afd-9772-418930dfc117",
+          "A2": "DataTableInfo",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "a0edbb04-869c-4e6c-be88-67933fccb34d",
+          "A2": "DataTableInfoEmpty",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "0d492cc7-4237-48b1-8888-b9dd37c60a0c",
+          "A2": "DataTableInfoFiltered",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "0b7179ba-c152-4d05-8ae5-4870e4e01ed2",
+          "A2": "DataTableLengthMenu",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "54ec9b40-6d96-403c-b513-290d61851d88",
+          "A2": "DataTableLoadingRecords",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "8896c5ae-f548-4125-b710-f3a888af65a2",
+          "A2": "DataTableProcessing",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "f729a21f-dc1b-4f60-99fd-ea06f8323f61",
+          "A2": "DataTableSearch",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "beac7fdf-cdcb-43a3-bf07-770bb7514a11",
+          "A2": "DataTableZeroRecords",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "1572a716-15f5-4da3-9c92-784f2eedecf9",
+          "A2": "DataTablePaginateNext",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "fe274120-8dcd-4675-bd69-c7fb2382ff23",
+          "A2": "DataTablePaginatePrevious",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "7569f5e8-b2aa-4914-b238-d87d4553e77a"
+        },
+        {
+          "UId": "1babd933-5a94-4672-acaf-bbb513b8063c",
+          "A2": "ShowQueryLogButton",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "cbeca07e-df56-4e1a-8327-7253d9586b43"
+        },
+        {
+          "UId": "3c4916b1-12ef-4401-acb9-5946ba9ec3c9",
+          "A2": "ShowQueryLogButtonTip",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "693ea18f-1f02-4188-9d83-eb36aadc50f5"
+        },
+        {
+          "UId": "6319a5b9-8771-4313-8867-e497b55e3eeb",
+          "A2": "SaveSqlButton",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "693ea18f-1f02-4188-9d83-eb36aadc50f5"
+        },
+        {
+          "UId": "6f0594f7-7ec5-4dd1-864d-61b1929b879a",
+          "A2": "SaveSqlButtonTip",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "693ea18f-1f02-4188-9d83-eb36aadc50f5"
+        },
+        {
+          "UId": "bf63ffbd-17cd-411e-a3ea-5801722c5d5d",
+          "A2": "CloseButtonTip",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A5": "693ea18f-1f02-4188-9d83-eb36aadc50f5"
+        }
+      ],
+      "B3": [],
+      "B6": "4887c1a6-978a-4761-8929-94353166997c",
+      "B8": "7.8.4.1572",
+      "HD1": "50e3acc0-26fc-4237-a095-849a1d534bd3",
+      "HD4": 1,
+      "HD6": "null",
+      "HD5": [
+        {
+          "UId": "87cddbbc-43ea-40de-9955-6f286ef6c31c",
+          "A2": "AceCodeEditor",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "HW1": "8ed40e79-ea15-418d-abee-5809c25d3c6d",
+          "HW2": "ClientUnitSchemaManager"
+        },
+        {
+          "UId": "e985a786-e1bf-4fe7-b3e7-07f9f5e3ce83",
+          "A2": "JQueryDataTables",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "HW1": "1936fd6e-41db-4274-97a3-c801b620b439",
+          "HW2": "ClientUnitSchemaManager"
+        }
+      ],
+      "HD7": [
+        {
+          "UId": "f9377aae-f65f-4bc6-8434-cb5c4f624cf7",
+          "A2": "ChangeHeaderCaption",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "HX1": 1,
+          "HX2": 1
+        },
+        {
+          "UId": "9e0eb378-4cf4-439f-b99b-3027d1d5866e",
+          "A2": "GetHistoryState",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "HX1": 1,
+          "HX2": 1
+        },
+        {
+          "UId": "46fd9531-c732-4058-9060-44f138aabab0",
+          "A2": "ReplaceHistoryState",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "HX1": 1,
+          "HX2": 1
+        },
+        {
+          "UId": "ec22bf06-4c34-428f-b010-104ec975dd81",
+          "A2": "BackHistoryState",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "HX1": 1
+        },
+        {
+          "UId": "4383ea72-2a3c-44f0-ac31-dca2862238cf",
+          "A2": "NeedHeaderCaption",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93"
+        },
+        {
+          "UId": "9b5e8afc-21b5-4edf-b7a9-9545e649e454",
+          "A2": "InitDataViews",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "HX1": 1,
+          "HX2": 1
+        },
+        {
+          "UId": "9400355b-e525-40e4-ae94-58c3cc85ca5f",
+          "A2": "InitContextHelp",
+          "A3": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "A4": "6783fcb0-748b-441e-a02f-0e0adde4fd93",
+          "HX1": 1,
+          "HX2": 1
+        }
+      ],
+      "HD8": [],
+      "HD11": []
+    }
+  }
+}

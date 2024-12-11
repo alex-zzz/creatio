@@ -1,0 +1,11 @@
+﻿{
+  "Descriptor": {
+    "UId": "8ed40e79-ea15-418d-abee-5809c25d3c6d",
+    "Name": "AceCodeEditor",
+    "ModifiedOnUtc": "\/Date(1462220821000)\/",
+    "DenyExtending": true,
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "AceCodeEditor",
+    "DependsOn": []
+  }
+}

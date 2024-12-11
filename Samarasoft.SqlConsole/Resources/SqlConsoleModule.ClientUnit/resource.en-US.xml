@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Resources Culture="en-US">
+	<Group Type="String">
+		<Items>
+			<Item Name="Caption" Value="SqlConsoleModule" />
+			<Item Name="LocalizableStrings.AccessError.Value" Value="The current user does not have rights to work with the SQL query console!" />
+			<Item Name="LocalizableStrings.ClearButton.Value" Value="Clear" />
+			<Item Name="LocalizableStrings.ClearButtonTip.Value" Value="Clear (Ctrl+L)" />
+			<Item Name="LocalizableStrings.CloseButton.Value" Value="Close" />
+			<Item Name="LocalizableStrings.CloseButtonTip.Value" Value="Close SQL console" />
+			<Item Name="LocalizableStrings.DataTableEmptyTable.Value" Value="No data available in table" />
+			<Item Name="LocalizableStrings.DataTableInfo.Value" Value="Showing _START_ to _END_ of _TOTAL_ entries" />
+			<Item Name="LocalizableStrings.DataTableInfoEmpty.Value" Value="Showing 0 to 0 of 0 entries" />
+			<Item Name="LocalizableStrings.DataTableInfoFiltered.Value" Value="(filtered from _MAX_ total entries)" />
+			<Item Name="LocalizableStrings.DataTableLengthMenu.Value" Value="Show _MENU_ entries" />
+			<Item Name="LocalizableStrings.DataTableLoadingRecords.Value" Value="Loading..." />
+			<Item Name="LocalizableStrings.DataTablePaginateNext.Value" Value="Next" />
+			<Item Name="LocalizableStrings.DataTablePaginatePrevious.Value" Value="Previous" />
+			<Item Name="LocalizableStrings.DataTableProcessing.Value" Value="Processing..." />
+			<Item Name="LocalizableStrings.DataTableSearch.Value" Value="Search:" />
+			<Item Name="LocalizableStrings.DataTableZeroRecords.Value" Value="No matching records found" />
+			<Item Name="LocalizableStrings.ExecuteButton.Value" Value="Execute" />
+			<Item Name="LocalizableStrings.ExecuteButtonTip.Value" Value="Execute script (Ctrl+Enter)" />
+			<Item Name="LocalizableStrings.ExportToCsvButton.Value" Value="Export to CSV" />
+			<Item Name="LocalizableStrings.ExportToCsvButtonTip.Value" Value="Export to CSV (Ctrl+Shift+S)" />
+			<Item Name="LocalizableStrings.HeaderCaption.Value" Value="SQL console" />
+			<Item Name="LocalizableStrings.QueryTimeLabelCaptionPostfix.Value" Value=" sec" />
+			<Item Name="LocalizableStrings.QueryTimeLabelCaptionPrefix.Value" Value="Query execution time: " />
+			<Item Name="LocalizableStrings.SaveSqlButton.Value" Value="Save SQL" />
+			<Item Name="LocalizableStrings.SaveSqlButtonTip.Value" Value="Save SQL script (Ctrl+S)" />
+			<Item Name="LocalizableStrings.ShowQueryLogButton.Value" Value="Show query log" />
+			<Item Name="LocalizableStrings.ShowQueryLogButtonTip.Value" Value="Show query log (Ctrl+Shift+H)" />
+		</Items>
+	</Group>
+</Resources>

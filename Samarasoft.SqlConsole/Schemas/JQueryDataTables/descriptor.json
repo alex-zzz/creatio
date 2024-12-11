@@ -1,0 +1,10 @@
+﻿{
+  "Descriptor": {
+    "UId": "1936fd6e-41db-4274-97a3-c801b620b439",
+    "Name": "JQueryDataTables",
+    "ModifiedOnUtc": "\/Date(1574176689000)\/",
+    "ManagerName": "ClientUnitSchemaManager",
+    "Caption": "JQueryDataTables",
+    "DependsOn": []
+  }
+}
