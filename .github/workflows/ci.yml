@@ -27,7 +27,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Collect pakages
         run: |
-          echo "dotnet tool install clio -g --version 6.1.0.39"
+          echo dotnet tool install clio -g --version 6.1.0.39
           for folder in ${{ vars.PACKAGE_FILE_PATH }}/*; do
                 if [ -d "$folder" ]; then
                   folder_name=$(basename "$folder")
