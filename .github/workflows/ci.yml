@@ -4,7 +4,7 @@ on:
   # Triggers the workflow on push or pull request events for "main", "pre-prod", "prod", "hot-fix" branches
   workflow_dispatch:
   push:
-    branches: [ "main1", "pre-prod", "prod", "hot-fix" ]
+    branches: [ "main", "pre-prod", "prod", "hot-fix" ]
   # pull_request:
     # branches: [ "main", "pre-prod", "prod", "hot-fix" ]
 
@@ -12,7 +12,7 @@ jobs:
   Install:
     runs-on: ubuntu-latest
     container:
-      image: dockerhub-external.banzait.com/banza-clio/clio:6.1.0.39
+      image: mcr.microsoft.com/dotnet/sdk:6.0-alpine
       credentials:
          username: ${{ vars.BANZA_USER }}
          password: ${{ secrets.BANZA_USER_PASSWORD }}
@@ -27,6 +27,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Collect pakages
         run: |
+          echo "dotnet tool install clio -g --version 6.1.0.39"
           for folder in ${{ vars.PACKAGE_FILE_PATH }}/*; do
                 if [ -d "$folder" ]; then
                   folder_name=$(basename "$folder")
