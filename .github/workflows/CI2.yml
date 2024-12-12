@@ -1,0 +1,119 @@
+name: CI
+
+on:
+  # Triggers the workflow on push or pull request events for "main", "pre-prod", "prod", "hot-fix" branches
+  workflow_dispatch:
+  push:
+    branches: [ "main1", "pre-prod", "prod", "hot-fix" ]
+  # pull_request:
+    # branches: [ "main", "pre-prod", "prod", "hot-fix" ]
+
+jobs:
+  Install:
+    runs-on: ubuntu-latest
+    container:
+      image: dockerhub-external.banzait.com/banza-clio/clio:6.1.0.39
+      credentials:
+         username: ${{ vars.BANZA_USER }}
+         password: ${{ secrets.BANZA_USER_PASSWORD }}
+      env:
+        NODE_ENV: development
+      ports:
+        - 443
+      volumes:
+        - ${{ github.workspace }}:${{ vars.PACKAGE_FILE_PATH }}
+      options: --cpus 1
+    steps:
+      - uses: actions/checkout@v3
+      - name: Collect pakages
+        run: |
+          for folder in ${{ vars.PACKAGE_FILE_PATH }}/*; do
+                if [ -d "$folder" ]; then
+                  folder_name=$(basename "$folder")
+                  echo "$folder_name"
+                  archiveName="${folder_name}.gz"
+                  echo "$archiveName"
+                  echo "${{ vars.GZ_ARCHIVE_FILE_PATH }}"
+                  echo "clio generate-pkg-zip ${folder} -d ${{ vars.GZ_ARCHIVE_FILE_PATH }}/${archiveName}"
+                  if [ ! -d "${{ vars.GZ_ARCHIVE_FILE_PATH }}" ]; then
+                      mkdir "${{ vars.GZ_ARCHIVE_FILE_PATH }}"
+                      echo "Folder created: ${{ vars.GZ_ARCHIVE_FILE_PATH }}"
+                  else
+                      echo "Folder already exists: ${{ vars.GZ_ARCHIVE_FILE_PATH }}"
+                  fi
+                  clio generate-pkg-zip $folder -d ${{ vars.GZ_ARCHIVE_FILE_PATH }}/$archiveName
+                fi 
+          done
+      - name: Generate Packages.zip from previosly collected packages
+        run: |
+          for file in ${{ vars.GZ_ARCHIVE_FILE_PATH }}/*; do
+            if [ -f "$file" ]; then
+                echo "$file"
+            fi
+          done
+          cd ${{ vars.GZ_ARCHIVE_FILE_PATH }} || exit
+          zip -r "Packages" *
+      - uses: actions/upload-artifact@v3
+        with:
+          name: packages
+          path: ${{ vars.GZ_ARCHIVE_FILE_PATH }}/Packages.zip
+      - name: Install Packages.zip into evironment
+        run: |
+          echo "Define variables"
+          branch_name="${GITHUB_REF##*/}"
+          env_name="${GITHUB_REF##*/}"
+          env_login=
+          env_password=
+          env_url=
+          #in this case we set this variables only for environments that will be build with this action
+          case $branch_name in 
+              "main")
+                  echo "Set main branch values"
+                  env_login="${{ vars.TEST_ENV_LOGIN }}"
+                  env_password="${{ secrets.TEST_ENV_PASSWORD }}"
+                  env_url="${{ vars.TEST_ENV_URL }}"
+                  echo "$env_login $env_password $env_url"
+                  ;;
+              "hot-fix")
+                  echo "Set hot-fix branch values"
+                  env_login="${{ vars.HOT_FIX_ENV_LOGIN }}"
+                  env_password="${{ secrets.HOT_FIX_ENV_PASSWORD }}"
+                  env_url="${{ vars.HOT_FIX_ENV_URL }}"
+                  echo "$env_login $env_password $env_url"
+                  ;;
+              "pre-prod")
+                  echo "Set hot-fix branch values"
+                  env_login="${{ vars.PRE_PROD_ENV_LOGIN }}"
+                  env_password="${{ secrets.PRE_PROD_ENV_PASSWORD }}"
+                  env_url="${{ vars.PRE_PROD_ENV_URL }}"
+                  echo "$env_login $env_password $env_url"
+                  ;;
+              "prod")
+                  echo "Set hot-fix branch values"
+                  env_login="${{ vars.PROD_ENV_LOGIN }}"
+                  env_password="${{ secrets.PROD_ENV_PASSWORD }}"
+                  env_url="${{ vars.PROD_ENV_URL }}"
+                  echo "$env_login $env_password $env_url"
+                  ;;
+          esac
+          
+          echo "Register web app"
+          clio reg-web-app $env_name -u $env_url -l $env_login -p $env_password
+          
+          echo "Install packages"
+          output=$(echo "${{ vars.BUILD_BRANCHES }}" | awk '{split($0,a,","); for (i=1;i in a;i++) print a[i]}')
+          while IFS= read -r line; do
+            if [ "$line" == "$branch_name" ]; then
+                  if [ -f "${{ vars.GZ_ARCHIVE_FILE_PATH }}/Packages.zip" ]; then
+                      echo "${{ vars.GZ_ARCHIVE_FILE_PATH }}/Packages.zip"
+                      echo "clio push-pkg /packages/gz/Packages.zip -l ${env_login} -p ${env_password} -u ${env_url}"
+                      clio push-pkg ${{ vars.GZ_ARCHIVE_FILE_PATH }}/Packages.zip -l "${env_login}" -p "${env_password}" -u "${env_url}"
+                      echo "Register web app"
+                      clio reg-web-app $env_name -u $env_url -l $env_login -p $env_password
+                      echo "restart-web-app $env_name"
+                      clio restart-web-app -u $env_url -l $env_login -p $env_password
+                      echo "clear-redis-db $env_name"
+                      clio clear-redis-db -u $env_url -l $env_login -p $env_password
+                  fi
+              fi
+          done < <(echo "$output")
